@@ -1,0 +1,458 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HPRO_DIALOG DIALOGEX 0, 0, 523, 298
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "."
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_MONITORING DIALOGEX 0, 0, 392, 262
+STYLE WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Start",IDC_START,65,206,75,12,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,101,383,1
+    PUSHBUTTON      "S&top",IDC_STOP,145,206,75,12,BS_FLAT
+    CONTROL         141,IDC_HISTOGRAM,"Static",SS_BITMAP,206,104,143,98
+    CONTROL         141,IDC_FILTERED_FRAME,"Static",SS_BITMAP,4,104,143,98
+    CONTROL         141,IDC_CURRENT_FRAME,"Static",SS_BITMAP,4,1,143,98
+    CTEXT           "Histogram",IDC_STATIC,348,107,43,15,WS_BORDER
+    CTEXT           "Filterd frame",IDC_STATIC,145,108,49,15,WS_BORDER
+    PUSHBUTTON      "&Close camera",IDC_CLOSE_CAMERA,223,206,75,12,BS_FLAT
+    CONTROL         141,IDC_BASE,"Static",SS_BITMAP,203,1,143,98
+    CTEXT           "Current frame",IDC_STATIC,145,9,51,15,WS_BORDER
+    CTEXT           "Base frame",IDC_STATIC,344,8,48,15,WS_BORDER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,2,203,392,1
+END
+
+IDD_DIALOG_ADMIN_ACOUNT DIALOG DISCARDABLE  0, 0, 259, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Users acounts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,8,39,53,13,BS_FLAT
+    COMBOBOX        IDC_CMB_USERS,121,7,126,104,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "User Name",IDC_STATIC,83,8,36,13
+    PUSHBUTTON      "Add new",IDC_ADDNEWUSER,76,39,53,13,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,68,0,1,54
+    PUSHBUTTON      "Modify",IDC_CHANGEUSERACCOUNT,133,39,53,13,BS_FLAT
+    PUSHBUTTON      "Delete",IDC_DELETE_USER,190,39,53,13,BS_FLAT
+    PUSHBUTTON      "View Logfile",IDC_VIEW_LOG,8,22,53,13,BS_FLAT
+    PUSHBUTTON      "Create Backup",IDC_BACKUP,8,5,53,13,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,71,32,187,1
+END
+
+IDD_LOGDIALOG DIALOGEX 0, 0, 327, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log file viewer"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,80,241,50,14,BS_FLAT
+    EDITTEXT        IDC_E_Log,7,7,313,223,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Clear",IDC_CLEAR,22,241,55,14,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,233,313,1
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Thamar universty\0"
+            VALUE "FileDescription", "Advanced monitoring system \0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AMS\0"
+            VALUE "LegalCopyright", "Thammar universty Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AMS.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "AMS Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_HPRO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_MONITORING, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_DIALOG_ADMIN_ACOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+    END
+
+    IDD_LOGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_NOTFY               WAVE    DISCARDABLE     "res\\111.wav"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x1, 0x9 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ARY)
+#ifdef _WIN32
+LANGUAGE 0x1, 0x9
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGON DIALOG DISCARDABLE  0, 0, 263, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "Log on"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_E_NAME,65,13,171,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_PASS,65,32,171,13,ES_CENTER | ES_LOWERCASE | 
+                    ES_PASSWORD | ES_AUTOHSCROLL
+    CTEXT           "User name",IDC_STATIC,22,13,42,13,SS_CENTERIMAGE
+    CTEXT           "Password",IDC_STATIC,22,33,42,13,SS_CENTERIMAGE
+    PUSHBUTTON      "&Ok",IDC_OK,57,61,55,12,BS_FLAT
+    PUSHBUTTON      "&Cancel",IDC_CANCEL,115,61,54,12,BS_FLAT
+    PUSHBUTTON      "&Logon from file",IDC_LOGON_FROM_FILE,172,61,70,12,
+                    BS_FLAT
+END
+
+IDD_CAMERA_CONNECTION DIALOGEX 0, 0, 413, 246
+STYLE WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Connect.",IDC_CONNECT,115,199,75,15,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,70,191,264,1
+    PUSHBUTTON      "&Disconnect",IDC_DISCONNECT,195,199,75,15,BS_FLAT
+    CONTROL         139,IDC_CAPWINDOW,"Static",SS_BITMAP,71,0,264,185
+END
+
+IDD_BASE_FRAME DIALOGEX 0, 0, 343, 226
+STYLE WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Create base frame",IDC_CREATEBASE,163,202,75,15,BS_FLAT
+    CONTROL         139,IDC_CAPWINDOW,"Static",SS_BITMAP,71,0,264,185
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,76,194,255,1
+END
+
+IDD_SYTEM_SETTINGDLG_DIALOG DIALOGEX 0, 0, 339, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AMS Setting"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,139,193,61,13,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,203,193,61,13,BS_FLAT
+    GROUPBOX        "Options",IDC_STATIC,130,7,200,74
+    GROUPBOX        "Recording ",IDC_STATIC,128,86,203,85,0,WS_EX_STATICEDGE
+    LTEXT           "Driver",IDC_STATIC,132,104,20,8
+    LTEXT           "Needed Size",IDC_STATIC,134,132,42,8
+    LTEXT           "MByte",IDC_STATIC,218,132,21,8
+    LTEXT           "8 (MBytes)  for 1(Second)",IDC_STATIC,134,152,81,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,134,123,188,1
+    COMBOBOX        IDC_CMB_DRIVER,156,103,65,99,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "",IDC_S_AVALIBLE_SPACE,222,103,100,12
+    EDITTEXT        IDC_E_SIZE,178,130,35,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CONTROL         "Always on top",IDC_ON_TOP,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_VCENTER | BS_FLAT | WS_TABSTOP,136,17,157,
+                    11,WS_EX_STATICEDGE
+    CONTROL         "Lanch on windows startup",IDC_STARTUP,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | BS_FLAT | 
+                    WS_TABSTOP,136,36,157,11,WS_EX_STATICEDGE
+    CONTROL         "Lanch automatically after faiultion",IDC_LANCH,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | BS_FLAT | 
+                    WS_TABSTOP,136,55,157,11,WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,130,182,201,1
+    LTEXT           "",IDC_STATIC,5,5,111,208,0,WS_EX_DLGMODALFRAME
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,7,7,111,206,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "Thamar University  all rights reserved                                         AMS Team .    ",
+                    IDC_STATIC,9,107,104,95,0,WS_EX_STATICEDGE
+END
+
+IDD_USER_ACCOUNT_DLG DIALOG DISCARDABLE  0, 0, 258, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New user account"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_E_NAME,76,13,156,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_PASS,76,29,131,12,ES_LOWERCASE | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "User name",IDC_STATIC,17,13,56,12,SS_CENTERIMAGE
+    LTEXT           "Password",IDC_STATIC,17,29,56,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_E_PASS2,76,45,131,12,ES_LOWERCASE | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Confirm password",IDC_STATIC,17,45,56,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "Save",IDOK,32,84,61,13,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,97,84,61,13,BS_FLAT
+    LTEXT           "Member Of ",IDC_STATIC,17,61,56,12
+    COMBOBOX        IDC_CMB_MEMBEROF,76,61,98,104,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,17,78,224,1
+    PUSHBUTTON      "Create Backup",IDC_BACKUP,162,84,61,13,BS_FLAT
+END
+
+IDD_ABOUT_DIALOG DIALOGEX 0, 0, 279, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About AMS."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,112,100,14,BS_FLAT
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,0,0,105,
+                    102,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "Advanced Monitoring System .",IDC_STATIC,110,7,145,10,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Thammar university  2005 all right reserved",IDC_STATIC,
+                    110,111,145,10,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,108,44,170,1
+    LTEXT           "Version 1.0.0",IDC_STATIC,110,16,145,10,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "AMS Team :- ",IDC_STATIC,110,51,145,10,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Faroq Mohammed Al-tam",IDC_STATIC,110,60,145,10,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Adnan Abdulkrim Al-swosoa",IDC_STATIC,110,68,145,10,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Abulfateh  Al-dobai",IDC_STATIC,110,77,145,10,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,106,260,1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_CAMERA_CONNECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_BASE_FRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_SYTEM_SETTINGDLG_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_USER_ACCOUNT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 251
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\hpro.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\hpro.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_B                   BITMAP  DISCARDABLE     "res\\12.bmp"
+IDB_DIALOG              BITMAP  DISCARDABLE     "res\\dialogs.bmp"
+IDB_CAPWINDOW           BITMAP  DISCARDABLE     "res\\capwindow.bmp"
+IDB_CAPWINDOW_MON       BITMAP  DISCARDABLE     "res\\capwindow_mon.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\about.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CR                  CURSOR  DISCARDABLE     "res\\hand.cur"
+#endif    // Unknown language: 0x1, 0x9 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\hpro.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
